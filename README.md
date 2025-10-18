@@ -24,11 +24,11 @@ project-folder/
 
 ---
 
-## Running Locally  
+## 🛠️ Running Locally  
 
 1. **Clone the repository**
 
-   git clone https://github.com/Yuneak/profile-card.git
+   git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
 
 Navigate into the project folder
 
@@ -57,3 +57,12 @@ Richard Eze
 - GitHub
 
 - LinkedIn
+
+
+
+
+
+
+
+
+
