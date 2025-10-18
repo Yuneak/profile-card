@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <article class="profile-card" data-testid="test-profile-card">
+    <!-- Top banner -->
+    <div class="banner"></div>
+
+    <!-- Flex wrapper -->
+    <div class="profile-content">
+      <!-- Avatar -->
+      <figure class="avatar">
+        <img src="images/ac3216768867569.64ba4d8a40975-modified.png" alt="Profile photo"
+          data-testid="test-user-avatar" />
+      </figure>
+
+      <!-- Text content -->
+      <div class="text-content">
+        <!-- Name & Bio -->
+
+        <header>
+          <h2 data-testid="test-user-name" aria-label="Richard Eze">Richard Eze</h2>
+            <h3>Fullstack Developer | UI/UX | Brand Identity Designer</h3>
+        </header>
+
+
+
+        <!-- Social Links -->
+        <nav data-testid="test-user-social-links">
+          <ul>
+            <li>
+              <a href="https://x.com/designsyuneak?s=21" target="_blank" rel="noopener noreferrer"
+                data-testid="test-user-social-twitter">Twitter</a>
+            </li>
+            <li>
+              <a href="https://github.com/Yuneak" target="_blank" rel="noopener noreferrer"
+                data-testid="test-user-social-github">Github</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/ezerichard" target="_blank" rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin">Linkedin</a>
+            </li>
+          </ul>
+        </nav>
+
+
+
+
+        <p data-testid="test-user-bio">
+          Engineer by day, designer by night, and problem-solver 24/7. I build systems that work, brands that stand out, and UIs that make you smile.
+        </p>
+
+        <!-- Divider -->
+        <hr />
+
+        <!-- Current Time -->
+        <p class="time" data-testid="test-user-time"></p>
+
+
+        <!-- Wrapper for hobbies & dislikes -->
+        <div class="lists-container">
+          <!-- Hobbies -->
+          <section data-testid="test-user-hobbies">
+            <h4>Hobbies</h4>
+            <ul>
+              <li>Coding</li>
+              <li>Designing</li>
+              <li>Gaming</li>
+            </ul>
+          </section>
+
+          <!-- Dislikes -->
+          <section data-testid="test-user-dislikes">
+            <h4>Dislikes</h4>
+            <ul>
+              <li>Bugs in production</li>
+              <li>Poor UI</li>
+              <li>Slow internet</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </article>
+  <script src="script.js"></script>
+</body>
+
+</html>

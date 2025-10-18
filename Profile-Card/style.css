@@ -1,0 +1,225 @@
+body {
+  background: #ffe8e8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Card container */
+.profile-card {
+  background: #fff;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  max-width: 500px;
+  width: 60%;
+  height: 60%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  padding-bottom: 20px;
+}
+
+/* Red banner */
+.banner {
+  background: linear-gradient(135deg, #e63946, #d62828);
+  height: 120px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/* Flex container */
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -60px; /* pull content up over banner */
+  padding: 0 20px;
+}
+
+/* Avatar */
+.avatar {
+  margin-bottom: 15px;
+}
+.avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Text content */
+.text-content {
+  text-align: center;
+  width: 100%;
+}
+
+header h2 {
+  margin: 2px 0 2px;
+  font-size: 35px;
+  color: #222;
+}
+header h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666;
+}
+
+.text-content p {
+  padding: 0 10px;
+  color: #555;
+  font-size: 14px;
+  padding-left: 0px;
+
+}
+
+/* Divider */
+.text-content hr {
+  width: 60%;
+  margin: 15px auto;
+  border: none;
+  border-top: 2px solid #e63946;
+  
+}
+
+/* Time */
+.time {
+  font-size: 13px;
+  color: #ff2222;
+  margin-bottom: 0
+  
+}
+
+/* Social links */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+nav a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #e63946;
+}
+
+nav a:focus {
+  outline: 1px dashed #e63946;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: #ff4757;
+}
+
+/* Hobbies & Dislikes */
+section {
+  margin-top: 15px;
+  text-align: left;
+  padding: 0 20px;
+}
+section h4 {
+  margin-bottom: 5px;
+  color: #222;
+}
+section ul {
+  list-style: disc inside;
+  margin: 0;
+  padding-left: 10px;
+}
+
+/* ============================= */
+/* Responsive layout for desktops */
+/* ============================= */
+
+@media (min-width: 768px) {
+
+  .profile-card {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 800px;
+  height: 500px;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  padding-bottom: 20px;
+}
+
+  .profile-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: -60px;
+  }
+
+  .banner {
+  background: linear-gradient(135deg, #e63946, #d62828);
+  height: 200px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+  .avatar {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+
+  .avatar img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-top: -50px;
+  border: 5px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+  header {
+    display: inline-flexbox;
+  }
+
+  nav ul {
+    display: inline-flex;
+  }
+
+  .text-content {
+    text-align: left;
+  }
+
+  header h2 {
+  margin: -25px 0 2px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+  .text-content hr {
+    margin: 5px 0;
+  }
+  
+
+  .lists-container {
+  display: flex;
+  justify-content: space-between; /* space between hobbies & dislikes */
+}
+
+.lists-container section {
+  flex: 1; /* each takes equal width */
+}
+
+}
