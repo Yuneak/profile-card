@@ -28,7 +28,7 @@ project-folder/
 
 1. **Clone the repository**
 
-   git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+   git clone https://github.com/Yuneak/profile-card.git
 
 Navigate into the project folder
 
