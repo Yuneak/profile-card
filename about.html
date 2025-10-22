@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Richard Eze</title>
+  <meta name="description" content="Learn more about Richard Eze - Fullstack Developer and Designer">
+  <meta name="author" content="Richard Eze">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navigation" role="navigation">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Profile</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="about.html" class="nav-link active" aria-current="page">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="page-main about-page" data-testid="test-about-page">
+    <div class="container">
+      <header class="page-header">
+        <h1>About Me</h1>
+        <p class="page-description">Reflections on my journey, goals, and growth</p>
+      </header>
+
+      <div class="about-sections">
+        <!-- Bio -->
+        <section class="about-card" data-testid="test-about-bio">
+          <div class="card-header">
+            <div class="icon-wrapper">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+                <path d="M20 3v4" />
+                <path d="M22 5h-4" />
+                <path d="M4 17v2" />
+                <path d="M5 18H3" />
+              </svg>
+            </div>
+            <h2>My Story</h2>
+          </div>
+          <p>
+            I'm a passionate fullstack developer and designer who believes in the power of clean code and beautiful
+            interfaces. My journey started with a curiosity about how things work, which evolved into a love for
+            building digital experiences that make a difference. I thrive at the intersection of functionality and
+            aesthetics, creating solutions that are both powerful and delightful to use.
+          </p>
+        </section>
+
+        <!-- Goals -->
+        <section class="about-card" data-testid="test-about-goals">
+          <div class="card-header">
+            <div class="icon-wrapper">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" />
+              </svg>
+            </div>
+            <h2>Goals in This Program</h2>
+          </div>
+          <ul class="goal-list">
+            <li>
+              <span class="bullet">•</span>
+              <span>Master advanced React patterns and state management to build scalable applications</span>
+            </li>
+            <li>
+              <span class="bullet">•</span>
+              <span>Deepen my understanding of backend architecture and API design</span>
+            </li>
+            <li>
+              <span class="bullet">•</span>
+              <span>Collaborate with other developers to learn best practices and new perspectives</span>
+            </li>
+            <li>
+              <span class="bullet">•</span>
+              <span>Build a portfolio of projects that showcase my full-stack capabilities</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Areas of Low Confidence -->
+        <section class="about-card" data-testid="test-about-confidence">
+          <div class="card-header">
+            <div class="icon-wrapper">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                <polyline points="16 7 22 7 22 13" />
+              </svg>
+            </div>
+            <h2>Growing Areas</h2>
+          </div>
+          <p class="section-intro">
+            I believe in being honest about my learning journey. Here are areas where I'm actively working to improve:
+          </p>
+          <ul class="goal-list">
+            <li>
+              <span class="bullet">•</span>
+              <span>Advanced database optimization and query performance tuning</span>
+            </li>
+            <li>
+              <span class="bullet">•</span>
+              <span>DevOps practices and CI/CD pipeline configuration</span>
+            </li>
+            <li>
+              <span class="bullet">•</span>
+              <span>Security best practices and penetration testing</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Note to Future Self -->
+        <section class="about-card future-note" data-testid="test-about-future-note">
+          <div class="card-header">
+            <div class="icon-wrapper">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </div>
+            <h2>Note to Future Self</h2>
+          </div>
+          <p class="italic-text">
+            "Remember when you started this journey? You were nervous, excited, and full of questions. Keep that
+            curiosity alive. Every bug you fix, every feature you ship, every line of code you write is a step forward.
+            Don't be afraid to ask for help, and don't forget to celebrate your wins—big and small. You're doing better
+            than you think. Keep building, keep learning, and most importantly, keep enjoying the process."
+          </p>
+        </section>
+
+        <!-- Extra Thoughts -->
+        <section class="about-card" data-testid="test-about-extra">
+          <div class="card-header">
+            <div class="icon-wrapper">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" x2="12" y1="8" y2="12" />
+                <line x1="12" x2="12.01" y1="16" y2="16" />
+              </svg>
+            </div>
+            <h2>Extra Thoughts</h2>
+          </div>
+          <p>
+            Technology is constantly evolving, and that's what makes this field so exciting. I'm committed to staying
+            curious, embracing challenges, and contributing to a community that values innovation and collaboration.
+            Outside of coding, I find inspiration in music, which teaches me about rhythm, patience, and the beauty of
+            creating something from nothing—principles I carry into my development work every day.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

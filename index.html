@@ -4,91 +4,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Card</title>
+  <title>Richard Eze - Fullstack Developer & Designer</title>
+  <meta name="description" content="Portfolio of Richard Eze - Fullstack Developer, UI/UX Designer, and Brand Identity Designer. Engineer by day, designer by night.">
+  <meta name="author" content="Richard Eze">
+  
+  <meta property="og:title" content="Richard Eze - Fullstack Developer & Designer">
+  <meta property="og:description" content="Portfolio of Richard Eze - Fullstack Developer, UI/UX Designer, and Brand Identity Designer">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <article class="profile-card" data-testid="test-profile-card">
-    <!-- Top banner -->
-    <div class="banner"></div>
+  <!-- Navigation -->
+  <nav class="navigation" role="navigation">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active" aria-current="page">Profile</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Flex wrapper -->
-    <div class="profile-content">
-      <!-- Avatar -->
-      <figure class="avatar">
-        <img src="images/ac3216768867569.64ba4d8a40975-modified.png" alt="Profile photo"
-          data-testid="test-user-avatar" />
-      </figure>
+  <!-- Main Content -->
+  <main class="page-main">
+    <article class="profile-card" data-testid="test-profile-card">
+      <!-- Top banner -->
+      <div class="banner"></div>
 
-      <!-- Text content -->
-      <div class="text-content">
-        <!-- Name & Bio -->
+      <!-- Flex wrapper -->
+      <div class="profile-content">
+        <!-- Avatar -->
+        <figure class="avatar">
+          <img src="images/ac3216768867569.64ba4d8a40975-modified.png" 
+               alt="Profile photo"
+               data-testid="test-user-avatar" />
+        </figure>
 
-        <header>
-          <h2 data-testid="test-user-name" aria-label="Richard Eze">Richard Eze</h2>
+        <!-- Text content -->
+        <div class="text-content">
+          <!-- Name & Bio -->
+          <header>
+            <h2 data-testid="test-user-name" aria-label="Richard Eze">Richard Eze</h2>
             <h3>Fullstack Developer | UI/UX | Brand Identity Designer</h3>
-        </header>
+          </header>
 
-
-
-        <!-- Social Links -->
-        <nav data-testid="test-user-social-links">
-          <ul>
-            <li>
-              <a href="https://x.com/designsyuneak?s=21" target="_blank" rel="noopener noreferrer"
-                data-testid="test-user-social-twitter">Twitter</a>
-            </li>
-            <li>
-              <a href="https://github.com/Yuneak" target="_blank" rel="noopener noreferrer"
-                data-testid="test-user-social-github">Github</a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/in/ezerichard" target="_blank" rel="noopener noreferrer"
-                data-testid="test-user-social-linkedin">Linkedin</a>
-            </li>
-          </ul>
-        </nav>
-
-
-
-
-        <p data-testid="test-user-bio">
-          Engineer by day, designer by night, and problem-solver 24/7. I build systems that work, brands that stand out, and UIs that make you smile.
-        </p>
-
-        <!-- Divider -->
-        <hr />
-
-        <!-- Current Time -->
-        <p class="time" data-testid="test-user-time"></p>
-
-
-        <!-- Wrapper for hobbies & dislikes -->
-        <div class="lists-container">
-          <!-- Hobbies -->
-          <section data-testid="test-user-hobbies">
-            <h4>Hobbies</h4>
+          <!-- Social Links -->
+          <nav data-testid="test-user-social-links" aria-label="Social media links">
             <ul>
-              <li>Coding</li>
-              <li>Designing</li>
-              <li>Playing the guitar</li>
+              <li>
+                <a href="https://x.com/designsyuneak?s=21" target="_blank" rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter">Twitter</a>
+              </li>
+              <li>
+                <a href="https://github.com/Yuneak" target="_blank" rel="noopener noreferrer"
+                  data-testid="test-user-social-github">Github</a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/ezerichard" target="_blank" rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin">Linkedin</a>
+              </li>
             </ul>
-          </section>
+          </nav>
 
-          <!-- Dislikes -->
-          <section data-testid="test-user-dislikes">
-            <h4>Dislikes</h4>
-            <ul>
-              <li>Bugs in production</li>
-              <li>Poor UI</li>
-              <li>Slow internet</li>
-            </ul>
-          </section>
+          <p data-testid="test-user-bio">
+            Engineer by day, designer by night, and problem-solver 24/7. I build systems that work, brands that stand
+            out, and UIs that make you smile.
+          </p>
+
+          <!-- Divider -->
+          <hr />
+
+          <!-- Current Time -->
+          <p class="time" data-testid="test-user-time" id="current-time"></p>
+
+          <!-- Wrapper for hobbies & dislikes -->
+          <div class="lists-container">
+            <!-- Hobbies -->
+            <section data-testid="test-user-hobbies">
+              <h4>Hobbies</h4>
+              <ul>
+                <li>Coding</li>
+                <li>Designing</li>
+                <li>Playing the guitar</li>
+              </ul>
+            </section>
+
+            <!-- Dislikes -->
+            <section data-testid="test-user-dislikes">
+              <h4>Dislikes</h4>
+              <ul>
+                <li>Bugs in production</li>
+                <li>Poor UI</li>
+                <li>Slow internet</li>
+              </ul>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </main>
+
   <script src="script.js"></script>
 </body>
 
